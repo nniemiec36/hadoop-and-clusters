@@ -1,0 +1,2 @@
+# hadoop-and-clusters
+ Objectives:   Gain experience with a live hadoop-style (hdfs,  spark) cluster. Implement a basic collaborative filtering recommendation system. Implement hypothesis testing with multi-test correction at scale. Gain experience navigating a cloud console to spin up a cluster. Work with moderately large data. Gain experience problem solving non-theoretical, practical issue of big data.
