@@ -1,0 +1,58 @@
+22/04/25 08:03:55 INFO org.apache.spark.SparkEnv: Registering MapOutputTracker
+22/04/25 08:03:55 INFO org.apache.spark.SparkEnv: Registering BlockManagerMaster
+22/04/25 08:03:55 INFO org.apache.spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+22/04/25 08:03:55 INFO org.apache.spark.SparkEnv: Registering OutputCommitCoordinator
+22/04/25 08:03:56 INFO org.sparkproject.jetty.util.log: Logging initialized @4744ms to or
+g.sparkproject.jetty.util.log.Slf4jLog
+22/04/25 08:03:56 INFO org.sparkproject.jetty.server.Server: jetty-9.4.40.v20210413; buil
+t: 2021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; jvm 1.8.0_322
+-b06
+22/04/25 08:03:56 INFO org.sparkproject.jetty.server.Server: Started @4931ms
+22/04/25 08:03:56 INFO org.sparkproject.jetty.server.AbstractConnector: Started ServerCon
+nector@13857dff{HTTP/1.1, (http/1.1)}{0.0.0.0:46437}
+22/04/25 08:03:57 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManag
+er at cluster-12e3-m/10.128.0.4:8032
+22/04/25 08:03:57 INFO org.apache.hadoop.yarn.client.AHSProxy: Connecting to Application 
+History server at cluster-12e3-m/10.128.0.4:10200
+22/04/25 08:03:58 INFO org.apache.hadoop.conf.Configuration: resource-types.xml not found
+22/04/25 08:03:58 INFO org.apache.hadoop.yarn.util.resource.ResourceUtils: Unable to find
+ 'resource-types.xml'.
+22/04/25 08:03:59 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl: Submitted a
+pplication application_1650846183129_0014
+22/04/25 08:04:00 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to ResourceManag
+er at cluster-12e3-m/10.128.0.4:8030
+22/04/25 08:04:03 INFO com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hadoop.gcs
+io.GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseException; verifi
+ed object already exists with desired state.
+End of 3.1.1: 
+################## CHECKPOINT 3.1 ##################
+[('89109', 0.38572721793343595), ('89118', 0.6918783464377923), ('44106', 0.6664241858717
+221), ('44122', 0.5828369555197579), ('15237', 0.7468337921577206)]
+ZIP CODE: 89109 MEAN BED USAGE: 0.38572721793343595
+ZIP CODE: 89118 MEAN BED USAGE: 0.6918783464377923
+ZIP CODE: 44106 MEAN BED USAGE: 0.6664241858717221
+ZIP CODE: 44122 MEAN BED USAGE: 0.5828369555197579
+ZIP CODE: 15237 MEAN BED USAGE: 0.7468337921577206
+######################################################
+################## CHECKPOINT 3.2 ##################
+
+ZIP CODE: 89109
+WORDS: 
+[('food', 0.38536443784746166), ('restau', 0.20151509838984272), ('drink', 0.180565
+13286816814), ('delicious', 0.13063779058215777), ('dinner', 0.11349407635098546)]
+ZIP CODE: 89118
+WORDS: 
+[('food', 0.22995063786140138), ('delicious', 0.08954099621770627), ('restau', 0.07
+790563497660107), ('drink', 0.07085390089108276), ('eat', 0.06699147381242387)]
+ZIP CODE: 15237
+WORDS: 
+[('food', 0.33932315064390534), ('restau', 0.1471498452630528), ('delicious', 0.098
+83198562443846), ('chees', 0.09623639812319057), ('drink', 0.09603673754617151)]
+ZIP CODE: 44106
+WORDS: 
+[('food', 0.42640210568941084), ('restau', 0.22342579469528245), ('delicious', 0.18
+181818181818182), ('drink', 0.13818586758453127), ('meal', 0.12593642437740432)]
+ZIP CODE: 44122
+WORDS: 
+[('food', 0.41565111420612816), ('restau', 0.2102193593314763), ('drink', 0.1300487
+4651810586), ('delicious', 0.12482590529247911), ('meal', 0.1200383008356546)]

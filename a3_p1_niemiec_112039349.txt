@@ -1,0 +1,73 @@
+
+Connected, host fingerprint: ssh-rsa 0 08:0E:45:7A:0D:5E:24:F0:E8:D1:5B:00:4F:49
+:B7:3F:78:78:05:19:3F:8B:1A:37:6C:E5:4F:E9:51:24:74:BA
+Welcome to Ubuntu 18.04.6 LTS (GNU/Linux 5.4.0-1069-gcp x86_64)
+ * Documentation:  https://help.ubuntu.com
+ * Management:     https://landscape.canonical.com
+ * Support:        https://ubuntu.com/advantage
+  System information as of Wed Apr 20 18:34:28 UTC 2022
+  System load:  0.05               Processes:           133
+  Usage of /:   19.1% of 61.86GB   Users logged in:     0
+  Memory usage: 45%                IP address for ens4: 10.142.0.9
+  Swap usage:   0%
+ * Super-optimized for small spaces - read how we shrank the memory
+   footprint of MicroK8s to make it the smallest full K8s around.
+   https://ubuntu.com/blog/microk8s-memory-optimisation
+1 update can be applied immediately.
+1 of these updates is a standard security update.
+To see these additional updates run: apt list --upgradable
+The programs included with the Ubuntu system are free software;
+the exact distribution terms for each program are described in the
+individual files in /usr/share/doc/*/copyright.
+Ubuntu comes with ABSOLUTELY NO WARRANTY, to the extent permitted by
+applicable law.
+
+nniemiec@cluster-7bb1-m:~$ pyspark sc._jsc.sc().getExecutorMemoryStatus().size() #returns the number of nodes
+-bash: syntax error near unexpected token `('
+nniemiec@cluster-7bb1-m:~$ 
+nniemiec@cluster-7bb1-m:~$ sc.parallelize([1, 2, 3, 4, 5]).take(2)
+-bash: syntax error near unexpected token `[1,'
+nniemiec@cluster-7bb1-m:~$ 
+nniemiec@cluster-7bb1-m:~$ pyspark
+Python 3.8.13 | packaged by conda-forge | (default, Mar 25 2022, 06:04:10) 
+[GCC 10.3.0] on linux
+Type "help", "copyright", "credits" or "license" for more information.
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+22/04/20 18:43:59 INFO org.apache.spark.SparkEnv: Registering MapOutputTracker
+22/04/20 18:43:59 INFO org.apache.spark.SparkEnv: Registering BlockManagerMaster
+22/04/20 18:43:59 INFO org.apache.spark.SparkEnv: Registering BlockManagerMasterHeartbeat
+22/04/20 18:43:59 INFO org.apache.spark.SparkEnv: Registering OutputCommitCoordinator
+Welcome to
+      ____              __
+     / __/__  ___ _____/ /__
+    _\ \/ _ \/ _ `/ __/  '_/
+   /__ / .__/\_,_/_/ /_/\_\   version 3.1.2
+      /_/
+Using Python version 3.8.13 (default, Mar 25 2022 06:04:10)
+Spark context Web UI available at http://cluster-7bb1-m.c.ardent-bulwark-347803.internal:45319
+Spark context available as 'sc' (master = yarn, app id = application_1650479291720_0001).
+SparkSession available as 'spark'.
+>>> sc._jsc.sc().getExecutorMemoryStatus().size() #returns the number of nodes
+1
+>>> sc.parallelize([1, 2, 3, 4, 5]).take(2)
+[1, 2]                                                                          
+>>> hadoop fs -put FILENAME FILENAME_ON_HDFS
+  File "<stdin>", line 1
+    hadoop fs -put FILENAME FILENAME_ON_HDFS
+           ^
+SyntaxError: invalid syntax
+>>> quit()
+nniemiec@cluster-7bb1-m:~$ hadoop fs -put FILENAME FILENAME_ON_HDFS
+put: `FILENAME': No such file or directory
+nniemiec@cluster-7bb1-m:~$ hadoop fs -put file.txt file
+put: `file.txt': No such file or directory
+nniemiec@cluster-7bb1-m:~$ cd
+nniemiec@cluster-7bb1-m:~$ ls
+nniemiec@cluster-7bb1-m:~$ ls -a
+.  ..  .bash_logout  .bashrc  .cache  .gnupg  .profile  .python_history  .ssh
+nniemiec@cluster-7bb1-m:~$ vim new_file.txt
+nniemiec@cluster-7bb1-m:~$ hadoop fs -put new_file.txt new_file
+nniemiec@cluster-7bb1-m:~$ hadoop fs -ls new_file
+-rw-r--r--   2 nniemiec hadoop         42 2022-04-20 18:47 new_file
+nniemiec@cluster-7bb1-m:~$ 

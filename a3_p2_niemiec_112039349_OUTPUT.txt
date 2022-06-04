@@ -1,0 +1,81 @@
+22/04/26 03:17:30 INFO org.apache.spark.SparkEnv: Registering MapOutputTracker
+22/04/26 03:17:30 INFO org.apache.spark.SparkEnv: Registering BlockManagerMaster
+22/04/26 03:17:30 INFO org.apache.spark.SparkEnv: Registering BlockManagerMasterHea
+rtbeat
+22/04/26 03:17:30 INFO org.apache.spark.SparkEnv: Registering OutputCommitCoordinat
+or
+22/04/26 03:17:30 INFO org.sparkproject.jetty.util.log: Logging initialized @4387ms
+ to org.sparkproject.jetty.util.log.Slf4jLog
+22/04/26 03:17:30 INFO org.sparkproject.jetty.server.Server: jetty-9.4.40.v20210413
+; built: 2021-04-13T20:42:42.668Z; git: b881a572662e1943a14ae12e7e1207989f218b74; j
+vm 1.8.0_322-b06
+22/04/26 03:17:30 INFO org.sparkproject.jetty.server.Server: Started @4577ms
+22/04/26 03:17:30 INFO org.sparkproject.jetty.server.AbstractConnector: Started Ser
+verConnector@cf98236{HTTP/1.1, (http/1.1)}{0.0.0.0:38169}
+22/04/26 03:17:31 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to Resourc
+eManager at cluster-12e3-m/10.128.0.4:8032
+22/04/26 03:17:32 INFO org.apache.hadoop.yarn.client.AHSProxy: Connecting to Applic
+ation History server at cluster-12e3-m/10.128.0.4:10200
+22/04/26 03:17:33 INFO org.apache.hadoop.conf.Configuration: resource-types.xml not
+ found
+22/04/26 03:17:33 INFO org.apache.hadoop.yarn.util.resource.ResourceUtils: Unable t
+o find 'resource-types.xml'.
+22/04/26 03:17:34 INFO org.apache.hadoop.yarn.client.api.impl.YarnClientImpl: Submi
+tted application application_1650930434637_0015
+22/04/26 03:17:35 INFO org.apache.hadoop.yarn.client.RMProxy: Connecting to Resourc
+eManager at cluster-12e3-m/10.128.0.4:8030
+22/04/26 03:17:38 INFO com.google.cloud.hadoop.repackaged.gcs.com.google.cloud.hado
+op.gcsio.GoogleCloudStorageImpl: Ignoring exception of type GoogleJsonResponseExcep
+tion; verified object already exists with desired state.
+2.1 Checkpoint: 
+
+USER ID: n00anwqzOaR52zgMRaZLVQ
+[('0_VT3sTwi7gorIlU36ASmg', 5.0), ('0e2oJ82g4ZfvQzIc8SE9Xw', 5.0), ('0qPNeqLuKE88rK
+bIbSZDpg', 4.0), ('0w3BdEOxvwKTpypwbN5kiQ', 5.0), ('1UvrUFk3BXAmueL1KQaKPQ', 4.0), 
+('1gU1ZNbcvk0puuUQjbl23w', 5.0), ('1t5hd9IXLpBOv3ICtk-bCw', 5.0), ('23k8iL0vtr86Ua3
+z3V9zsg', 4.0), ('2g_auUWw7c3c2CUTgVqI8Q', 5.0), ('2weQS-RnoOBhb1KsHKyoSQ', 4.0)]
+USER ID: uEvusDwoSymbJJ0auR3muQ
+[('-1vfRrlnNnNJ5boOVghMPA', 2.0), ('-Bf8BQ3yMk8U2f45r2DRKw', 4.0), ('-HlvM9fUpzB6hB
+vKwABMWA', 2.0), ('-Tb_eUD3LALhoYYUSXQveQ', 5.0), ('-Ylpy3VyRWwubf9dysuwjQ', 2.0), 
+('-ipc5f0XiXwH3hbNnro54Q', 5.0), ('-sAr-LA9TsIdl37UjwBlvg', 1.0), ('-yzOpvalbaKF6QR
+as5VDJw', 5.0), ('0QzCeORfF8EY34UODWRV9A', 2.0), ('0WoQQlMXVIDEgI0xNdENKA', 3.0)]
+USER ID: q6XnQNNOEgvZaeizUgHTSw
+[('-7HB0UjguXW8csOH9svG4Q', 3.0), ('-JfncbVURtvuzBbof40o1w', 2.0), ('-isxnIljKLVjc9
+qEhCiaGg', 4.0), ('-kG0N8sBhBotMbu0KVSPaw', 4.0), ('-yJHbYGTXp-Hkl7BnHYVrw', 4.0), 
+('0J_NiF5Lb0bFM5v6ZY-uGw', 2.0), ('0QjIVTxHfbWAdWYD7eWlpQ', 4.0), ('0rRLSX5rotp1_wi
+Shc0jNw', 3.0), ('1-mycIcKFGbvqLE60XrwnQ', 3.0), ('1CR2ddUcjYYwRd5JLtiRrw', 4.0)]
+USER ID: PomQayG1WhMxeSl1zohAUA
+[('-AD5PiuJHgdUcAK-Vxao2A', 3.0), ('-JFVxwdVQfX207554dx1nw', 4.0), ('-OEIW0dO96-492
+qa_luxaw', 4.0), ('-SpT8Tyz2R45zSw1AIUimQ', 3.0), ('-sjCxkxv6xU5rEVLFybAuA', 4.0), 
+('-wDNRL4lm1UgeFLG9KcrjQ', 4.0), ('0NmTwqYEQiKErDv4a55obg', 4.0), ('0ldxjei8v4q95fA
+pIei3Lg', 3.0), ('0p27EjcNwTI7Ey4K_MNPww', 3.0), ('0qSKZhVC_BHPuKro4QGWJw', 3.0)]
+USER ID: qOdmye8UQdqloVNE059PkQ
+[('-9dmhyBvepc08KPEHlEM0w', 5.0), ('-B8uga7IGEQijKERiwuz7A', 5.0), ('-kG0N8sBhBotMb
+u0KVSPaw', 5.0), ('0LA4HKI7ydji1zwnqDbgnw', 1.0), ('1PMwRG0uWGxk2hIVEQj62A', 4.0), 
+('2Q89PhkcyT9uZnQORmqMKg', 3.0), ('2S9t90Q0qZWCV7X_u0rxZQ', 3.0), ('2SyYW8GiDZsqtPb
+-aCbosg', 5.0), ('2gUlfNEmqFlugmT-uT1m_w', 3.0), ('308f__iS3Qw_qhnda6IVPw', 4.0)]
+
+Checkpoint 2.2:
+
+
+USER ID: n00anwqzOaR52zgMRaZLVQ
+[('7sb2FYLS2sejZKxRYF9mtg', 4.242136334869034), ('XQJr9_jZR1vOoZVcZfDDwQ', 4.338975
+323017805), ('hihud--QRriCYZw1zZvW4g', 4.231785001630059), ('o7AiTlyWUrBSzdz6oMHj5w
+', 3.0000000000000004), ('sOYsxYYFl03PhHmz_rBDZQ', 4.781382016852636)]
+USER ID: uEvusDwoSymbJJ0auR3muQ
+[('DXlDzOcpdUE_F21tok0fgw', 4.486914668364846), ('DfgZlNgKwBvCpA_0alumXw', 3.364364
+5433549048), ('DkYS3arLOhA8si5uUEmHOw', 4.502621926283801), ('MpmFFw0GE_2iRFPdsRpJb
+A', 4.0), ('q18xbq3Cbyp_BJyfMQxFxg', 4.381828698989668)]
+USER ID: q6XnQNNOEgvZaeizUgHTSw
+[('4JNXUYY8wbaaDmk3BPzlWw', 4.259747975128576), ('LtXy1VinKWfuLFslVarKRw', 4.336155
+266836582), ('f4x1YBxkLrZg652xt2KR5g', 4.344420549330807)]
+USER ID: PomQayG1WhMxeSl1zohAUA
+[('AaLvYFsLuyO1uGk0QLxN5A', 4.034929306012462), ('DXlDzOcpdUE_F21tok0fgw', 3.994569
+8267124503), ('H8qpFitIesth86zqR4cwYg', 4.684111753535012)]
+USER ID: qOdmye8UQdqloVNE059PkQ
+[('2weQS-RnoOBhb1KsHKyoSQ', 3.261739670045832), ('DkYS3arLOhA8si5uUEmHOw', 4.256681
+423509905), ('N93EYZy9R0sdlEvubu94ig', 4.0), ('h_4dPV9M9aYaBliH1Eoeeg', 4.413783131
+9292555), ('mz9ltimeAIy2c2qf5ctljw', 4.349777962167298), ('r_BrIgzYcwo1NAuG9dLbpg',
+ 4.652899416262088), ('ujHiaprwCQ5ewziu0Vi9rw', 3.2036742786773473)]
+ 
+Checkpoint 2.3: 
